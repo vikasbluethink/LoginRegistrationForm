@@ -5,6 +5,7 @@
 <title>Home page</title>
 </head>
 <body>
+<span sec:authorize="isAuthenticated()"><a th:href="@{logout}">logout</a></span>
 <div class="greet">You have logged in successfully. </div>
 <span>Welcome </span><span sec:authentication="principal.username"> user</span>
 
