@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+</head>
+<body>
+<div class="greet">You have logged in successfully. </div>
+<span>Welcome </span><span sec:authentication="principal.username"> user</span>
+
+</body>
+</html>

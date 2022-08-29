@@ -21,7 +21,7 @@ public class UserRegistrationController {
 
 	@GetMapping
 	public String showRegistrationFrom() {
-		return "home";
+		return "registration";
 	}
 
 	@ModelAttribute("user")

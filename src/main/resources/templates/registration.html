@@ -16,7 +16,7 @@
 			</div>
 			<div class="row clearfix">
 				<div class="">
-					<form th:if="@{/registration}" method="post" th:object="${user}">
+					<form th:if="@{/registration}" th:action="@{/registration}" method="post" th:object="${user}">
 						<div class="row clearfix">
 							<div class="col_half">
 								<div class="input_field">
@@ -44,7 +44,9 @@
 						</div>
 						<button class="button" type="submit" value="Register">Register</button>
 					</form>
+					
 				</div>
+				<span>Already have an account?</span><a href="/" th:href="@{/login}">Login</a>
 			</div>
 		</div>
 	</div>
